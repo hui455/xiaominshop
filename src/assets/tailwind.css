@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.ther{
+  @apply border border-[#e0e0e0]
+}
+.bor{
+  @apply border-[#e0e0e0] border-y border-l
+}
+
+.bor:hover + .ther,.bor:hover {
+  @apply border-[#33333380]
+}
+.bor:focus + .ther,.bor:focus {
+  @apply border-[#ff6700] ; /* 使用Tailwind CSS @apply at-rule */
+}
